@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/balu100/arcore-profile-installer/releases"><img src="https://img.shields.io/github/v/release/balu100/arcore-profile-installer?include_prereleases&amp;label=preview&amp;color=7C3AED" alt="Preview release"></a>
   <a href="https://github.com/balu100/arcore-profile-installer/actions/workflows/test.yml"><img src="https://github.com/balu100/arcore-profile-installer/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11+"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-14B8A6" alt="MIT license"></a>

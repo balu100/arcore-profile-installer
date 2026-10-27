@@ -26,5 +26,8 @@ the phone during this packaging pass. Its underlying 1.6 → backup/restore → 
 runtime technique worked in the preceding dash-specific workflow. No additional
 device model, Android release, ROM or CPU architecture is claimed tested.
 
-The CI workflow is included for future Windows/Linux checks; hosted CI has not
-run until this source is pushed to GitHub.
+Hosted validation: [GitHub Actions run 40599260095](https://github.com/balu100/arcore-profile-installer/actions/runs/40599260095)
+passed all four jobs on 2026-10-28 (Europe/Budapest): Windows and Linux, each
+with Python 3.11 and 3.14. Every job ran the 22 offline tests, installed the
+package and checked the installed CLI plus bundled profile outside the checkout.
+These checks do not add any on-device compatibility or accuracy claims.
