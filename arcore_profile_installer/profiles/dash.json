@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "poco-dash-experimental-v1",
+  "device": "dash",
+  "manufacturer": "Xiaomi",
+  "label": "POCO X8 Pro Max / dash",
+  "status": "experimental",
+  "tested": {
+    "android_sdk": 36,
+    "firmware": "OS3.0.303.0.WPLEUXM",
+    "arcore_versions": ["1.56.262080393", "1.57.262640093"],
+    "evidence": "Custom profile load and Maps VIO initialization observed on one device. No accuracy certification."
+  },
+  "camera_overrides": {
+    "0": {
+      "rolling_shutter_readout_time_nanoseconds": 25436160,
+      "calibrated_focal_length.x": 430.928115845,
+      "calibrated_focal_length.y": 430.929679870,
+      "calibrated_principal_point.x": 320.0,
+      "calibrated_principal_point.y": 240.0,
+      "camera_timebase_trust_level": "TRUSTED_AS_BOOTTIME"
+    }
+  },
+  "provenance": [
+    "Camera2 intrinsics [2757.93994141,2757.94995117,2048,1536,0], pre-correction array 4096x3072, scaled to 640x480.",
+    "Camera2 timestamp source REALTIME.",
+    "Readout seed from sensor timing; live SENSOR_ROLLING_SHUTTER_SKEW later reported 25437090 ns."
+  ],
+  "limitations": [
+    "Camera-IMU extrinsics and IMU noise parameters remain from the generic base profile.",
+    "No measured gyro/accelerometer timestamp alignment is supplied.",
+    "Front camera remains generic and unvalidated.",
+    "A successful session does not establish factory-level tracking accuracy."
+  ]
+}

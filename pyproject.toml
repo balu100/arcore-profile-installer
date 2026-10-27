@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arcore-profile-installer"
+version = "0.1.0"
+description = "ADB installer for Google's generic ARCore profile and optional device overrides"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+keywords = ["arcore", "adb", "android", "device-profile", "rootless"]
+
+[project.urls]
+Homepage = "https://github.com/balu100/arcore-profile-installer"
+Documentation = "https://github.com/balu100/arcore-profile-installer#readme"
+Issues = "https://github.com/balu100/arcore-profile-installer/issues"
+Changelog = "https://github.com/balu100/arcore-profile-installer/blob/main/CHANGELOG.md"
+
+[project.scripts]
+arcore-profile = "arcore_profile_installer.cli:main"
+
+[tool.setuptools.package-data]
+arcore_profile_installer = ["profiles/*.json"]
+
+[tool.setuptools.packages.find]
+include = ["arcore_profile_installer*"]
+namespaces = false

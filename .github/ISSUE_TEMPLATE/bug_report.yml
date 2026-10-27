@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible installer or runtime-verification problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Include short, redacted excerpts only. Do not upload APKs, Android backups, device serials or location data.
+        Check the [README](https://github.com/balu100/arcore-profile-installer#readme) and [FAQ](https://github.com/balu100/arcore-profile-installer/blob/main/docs/FAQ.md) first.
+  - type: input
+    id: revision
+    attributes:
+      label: Installer version or commit
+      placeholder: v0.1.0 / commit hash
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Desktop OS, Python/ADB versions, phone model/codename, Android version and ROM build. Omit serial numbers.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and steps to reproduce
+      description: Include generic/device mode, source runtime version and the step where it fails. Redact private paths and identifiers.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+      description: If setup was involved, say which confirmation screens appeared and whether runtime recovery succeeded.
+    validations:
+      required: true
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: Relevant output
+      description: Paste only the error and nearby relevant lines, after redacting identifiers and location data.
+      render: text

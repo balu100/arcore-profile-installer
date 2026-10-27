@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">ARCore Profile Installer</title>
+  <desc id="desc">Rootless profile setup over ADB. Generic by default, device overrides by choice.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c172b"/><stop offset="1" stop-color="#142e42"/></linearGradient>
+    <linearGradient id="accent" x2="1" y2="1"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0v36" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern>
+  </defs>
+  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="22" fill="url(#grid)"/>
+  <g font-family="Segoe UI, Inter, Arial, sans-serif">
+    <rect x="52" y="43" width="178" height="27" rx="13.5" fill="#5eead4" fill-opacity=".12"/>
+    <text x="68" y="62" font-size="12" font-weight="700" letter-spacing="1.2" fill="#5eead4">ADB / ARM64 / PYTHON</text>
+    <text x="52" y="132" font-size="44" font-weight="750" fill="#f1f5f9">ARCore Profile Installer</text>
+    <text x="54" y="176" font-size="21" fill="#cbd5e1">Rootless profile setup over ADB.</text>
+    <text x="54" y="216" font-size="16" fill="#94a3b8">Generic by default. Device overrides by choice.</text>
+    <text x="54" y="261" font-size="12" letter-spacing="1.4" fill="#647d93">ORIGINAL GOOGLE RUNTIME · EXPERIMENTAL</text>
+  </g>
+  <g transform="translate(900 43)">
+    <rect x="0" y="0" width="142" height="212" rx="25" fill="#0b182b" stroke="#48647b" stroke-width="2"/>
+    <rect x="12" y="14" width="118" height="184" rx="16" fill="#183447"/>
+    <path d="M54 22h34" stroke="#48647b" stroke-width="4" stroke-linecap="round"/>
+    <path d="m71 49 37 21v42l-37 21-37-21V70Z" fill="none" stroke="url(#accent)" stroke-width="3"/>
+    <path d="m34 70 37 21 37-21M71 91v42" fill="none" stroke="#5eead4" stroke-width="2"/>
+    <rect x="-48" y="142" width="199" height="48" rx="10" fill="#0f2438" stroke="#48647b"/>
+    <text x="-30" y="171" font-family="Consolas, monospace" font-size="14" fill="#7dd3fc">&gt; arcore-profile</text>
+    <circle cx="160" cy="68" r="20" fill="#143d3e" stroke="#5eead4" stroke-opacity=".4"/>
+    <path d="m152 68 6 6 10-12" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

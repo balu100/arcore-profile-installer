@@ -1,0 +1,49 @@
+name: Device profile evidence
+description: Propose a measured device override or share a tested compatibility result.
+title: "[Device] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read [CONTRIBUTING.md](https://github.com/balu100/arcore-profile-installer/blob/main/CONTRIBUTING.md) first.
+        A successful session is useful evidence, but does not certify calibration accuracy. Do not attach firmware, APKs or personal backups.
+  - type: input
+    id: model
+    attributes:
+      label: Manufacturer, model and codename
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Android SDK, firmware and ARCore version
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Profile tested
+      options:
+        - Google generic (unchanged)
+        - Bundled device override
+        - New external device override
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Observed runtime behavior
+      description: Distinguish custom-profile loading, camera start, inertial tracking, VIO initialization and sustained tracking. State remaining failures.
+    validations:
+      required: true
+  - type: textarea
+    id: measurements
+    attributes:
+      label: Measurements and remaining defaults
+      description: For proposed overrides, include value sources, units, stream/array dimensions and coordinate conventions. Identify unmeasured fields left generic.
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: Redacted diagnostic excerpt or override JSON
+      description: No device serials, APKs, backups or location data.
+      render: text
